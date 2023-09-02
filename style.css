@@ -1,0 +1,13 @@
+.myli {
+  /* selector para class */
+  background-color: aquamarine;
+  color: palegreen;
+}
+header {
+  /* selector elemento */
+  color: blue;
+  background-color: rgba(89, 26, 161, 0.363);
+}
+#article-1 /* selector id */ {
+  background-color: darkkhaki;
+}
