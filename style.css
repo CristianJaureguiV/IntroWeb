@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(53, 76, 100);
+}
+
 .myli {
   /* selector para class */
   background-color: aquamarine;

@@ -18,9 +18,9 @@
         <li>
           <a href="estructura.html">Estructura de un documento HTML</a>
         </li>
-        <li>Introducción a CSS</li>
-        <li>Introducción a JS</li>
-        <li>Introducción al DOM</li>
+        <li><a href="introcss.html">Introducción a CSS</a></li>
+        <li><a href="introjs.html">Introducción a JS</a></li>
+        <li><a href="introdom.html">Introducción al DOM</a></li>
       </ul>
     </nav>
     <!-- Emmet: es un plugin para editores de code, que nos proporcionaran atajos para programar de mejor manera -->
@@ -31,14 +31,15 @@
     <h3>Encabezado 5</h3>
     <h4>Encabezado 4</h4>
     <h5>Encabezado 3</h5>
-    <h6>Encabezado 6</h6>
+    <h6>Encabezado 2</h6>
     <!-- CTRL + ALT + FLECHA "multiplicar cursor" -->
     <hr />
     <!-- cambio de tema entre párrafos, de forma visual puede ser representado como una linea horizontal, sin embargo, actualmente se debería usar para esto -->
     <h2>Otro tema</h2>
     <h3>parrafos</h3>
     <p>
-      <span style="color: red">Lorem ipsum dolor</span> sit amet consectetur.<br />
+      <span style="color: rgb(25, 101, 163)">Lorem ipsum dolor</span> sit amet
+      consectetur.<br />
       adipisicing elit. Doloremque totam tenetur temporibus nesciunt debitis
       sapiente vitae accusamus officiis qui vero odit reiciendis, autem corporis
       incidunt nulla recusandae minima quidem consequuntur?
@@ -48,9 +49,10 @@
     <h3>ancla</h3>
     <a target="_self" href="http://www.google.com">google</a><br />
     <a target="_blank" href="http://www.google.com">google en ventana aparte</a>
-    <!-- Ancla: crea enlaces. 
+    <!-- Ancla(a): crea enlaces. 
     Su atributo target por defecto es "_self" (target _top y _parent se encuentran en desuso)-->
     <hr />
+    <!-- Hasta aquí llego el estudio :p -->
     <h2>Formulario</h2>
     <form action="/syberform" method="get">
       <label for="nombre">Nombre</label><br />
@@ -110,8 +112,8 @@
       <li>item 3</li>
       <li>
         <ul>
-          <li style="list-style: lower-roman" :>sub item 1</li>
-          <li style="list-style: lower-roman" list-style:>sub item 2</li>
+          <li style="list-style: lower-roman">sub item 1</li>
+          <li style="list-style: lower-roman">sub item 2</li>
           <li style="list-style: lower-roman">sub item 3</li>
         </ul>
       </li>
@@ -124,6 +126,7 @@
         <tr>
           <th style="border: 1px solid black; padding: 5px">Implante</th>
           <th style="border: 1px solid black; padding: 5px">Precio</th>
+          <th style="border: 1px solid black; padding: 5px">Disponible</th>
         </tr>
       </thead>
       <tbody>
@@ -131,17 +134,19 @@
         <tr>
           <td style="border: 1px solid black; padding: 5px">Ojo laser</td>
           <td style="border: 1px solid black; padding: 5px">500000</td>
+          <td style="border: 1px solid black; padding: 5px">sí</td>
         </tr>
         <tr style="border: 1px solid black; padding: 5px">
           <td style="border: 1px solid black; padding: 5px">Mano robótica</td>
           <td style="border: 1px solid black; padding: 5px">830000</td>
+          <td style="border: 1px solid black; padding: 5px">sí</td>
         </tr>
       </tbody>
       <tfoot>
         <!-- Footer -->
         <tr>
-          <td>Total</td>
-          <td>1330000</td>
+          <td style="border: 1px solid black; padding: 5px">Total</td>
+          <td style="border: 1px solid black; padding: 5px">1330000</td>
         </tr>
       </tfoot>
     </table>
