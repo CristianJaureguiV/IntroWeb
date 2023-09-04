@@ -1,5 +1,6 @@
-body {
-  background-color: rgb(53, 76, 100);
+/* selector global */
+* {
+  box-sizing: content-box;
 }
 
 .myli {
@@ -12,6 +13,167 @@ header {
   color: blue;
   background-color: rgba(89, 26, 161, 0.363);
 }
+.content-content-box > div {
+  background-color: green;
+  width: 300px;
+  margin: 30px;
+  border: 10px solid black;
+}
 #article-1 /* selector id */ {
   background-color: darkkhaki;
+}
+
+#myp {
+  color: beige;
+}
+
+.myp {
+  font-size: 24px;
+}
+
+.back {
+  background-color: burlywood;
+}
+
+/* MODELO DE CAJA */
+
+.contenedor {
+  margin: 50px;
+  background-color: violet;
+  padding: 10px;
+  border: 5px solid black;
+  color: green;
+}
+
+.contenido {
+  background-color: aquamarine;
+}
+
+.contenedor-con-imagen {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  background-color: aqua;
+  background-image: url("public/b18107f7e40e16f23be5f36416c569fa.gif");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.contenido-con-imagen {
+  background-color: white;
+}
+
+/* selectores */
+
+/* selector por elemento */
+
+span {
+  font-weight: bold;
+}
+/* Asigna los mismos estilos a elementos con nombres diferentes, esta regla afecta a todos los elementos <p> y <span> */
+p,
+span {
+  color: blueviolet;
+}
+/* Afecta solo a los elementos <p> que se encuentran dentro de la etiqueta <main>, ya sea contenido directo o indirecto */
+main p {
+  background-color: cornflowerblue;
+}
+
+/* Usa el caracter > para referenciar a un elemento que es hijo directo de .contenedor . parrafo  */
+
+.contenedor-parrafo > p {
+  font-size: 35px;
+}
+/* Este selector hace referencia a elementos que están precedidos por otros elementos; Ambos deben estar al mismo nivel */
+
+h1 + p {
+  color: red;
+}
+
+/* selector global */
+
+* {
+  background-color: azure;
+}
+
+/* Estilos mas usados */
+/* Declara el tipo de letra que se usa para mostrar en un texto. Se pueden declarar múltiples valores separados por coma para ofrecer al navegador varias alternativas en caso de que alguna no se encuentre disponible */
+.container {
+  border-top: 1px solid black;
+  padding: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container > .content > p {
+  background-color: white;
+  color: black;
+  font-size: 25px; /* Determina el tamaño exacto de la fuente;  Puede estar incluido en pixeles (px),puntos (pt), porcentajes(%), rem, em*/
+  font-weight: 100; /* bold (100 - 1000) */ /* si pongo bold, en vez de el numero, lo hace lo más delgado */
+  font-style: oblique; /* normal, italic, oblique */
+}
+
+.content > h3 {
+  background-color: bisque;
+  font: bold 30px Arial, sans-serif; /* Permite declarar varios atributos al mismo tiempo, separados por espacios. Primero el ancho de los caracteres, el tamaño (px) y luego familia de font (más de 1 fuente) */
+  text-align: center; /* left, right, center, justify */
+  line-height: 30 px; /* define el espacio entre líneas */
+}
+
+/* Colores */
+
+.mydiv {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: rgb(255, 380, 100);
+  background-image: url("public/b18107f7e40e16f23be5f36416c569fa.gif");
+}
+
+.div-in-mydiv {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255, 0.9);
+}
+.div-in-mydiv-2 {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  background-color: #ff0000; /* 0 - 9 y A F  */
+}
+
+/* Tamaños */
+.div-in-mydiv-3 {
+  height: 50px;
+  width: 50px;
+  margin: 20px 0px; /* 2 valores, 20 es para arriba y abajo, el 0 es para izq y derecha */
+  border: 1px solid black;
+  background-color: #00ff00; /* 0 - 9 y A F  */
+}
+.tamano {
+  margin: 100px 20px;
+  height: 200px;
+  width: 200px;
+  background-color: black;
+}
+
+.content {
+  height: 400px;
+  width: 200px;
+}
+
+.tamano-hijo {
+  height: 25%;
+  width: 25%;
+  background-color: red;
+}
+
+.div-vh-vw {
+  height: 100vh;
+  width: 100vw;
+  background-color: blue;
+  /* aqui falta algo xd */
 }
